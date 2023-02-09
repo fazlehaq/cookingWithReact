@@ -1,0 +1,73 @@
+.recipe {
+  margin-block: 1rem;
+  border-bottom: 2px dashed black;
+  padding: 1rem;
+  padding-top: 0;
+  padding-left: 0;
+  /* set max-width */
+}
+
+.recipe header {
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.recipe-name {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.buttons {
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+}
+
+.button {
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.label-value {
+}
+
+.button-edit {
+}
+
+.button-delete {
+}
+
+.indent {
+  padding-left: 1.5rem;
+}
+
+.instructions {
+  white-space: pre-wrap;
+}
+
+.ingredients {
+  width: max-content;
+}
+
+.ingredient {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 0.25rem;
+}

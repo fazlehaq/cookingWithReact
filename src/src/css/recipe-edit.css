@@ -1,0 +1,94 @@
+#recipe-edit {
+  padding: 1rem;
+  padding-top: 0;
+  padding-left: 2rem;
+  height: auto;
+  max-height: 100vh;
+  overflow-x: auto;
+}
+
+.recipe-edit-close-btn-container {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.recipe-edit-close-btn {
+  font-size: 2rem;
+  font-weight: 600;
+  background: none;
+  padding: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.recipe-edit-details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.recipe-edit-details input,
+.recipe-edit-ingredients-grid > input {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+#recipe-edit label {
+  padding: 5px;
+  font-size: 1.15rem;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.recipe-edit-details textarea {
+  padding: 5px;
+  font-size: 1.2rem;
+  resize: none;
+  height: 200px;
+}
+
+.recipe-edit-ingredients {
+  margin-top: 2rem;
+}
+
+.recipe-edit-ingredients .labels {
+  margin: 1rem auto;
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: auto 50%;
+}
+
+.labels > label {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.recipe-edit-ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+  column-gap: 10px;
+}
+
+.add-ingredient-btn-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .recipe-edit-details {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .recipe-edit-ingredients-grid {
+    grid-template-columns: auto;
+  }
+
+  .labels {
+    /* display: none; */
+    /* visibility: hidden; */
+  }
+}
