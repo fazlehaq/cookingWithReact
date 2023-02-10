@@ -1,8 +1,9 @@
 #recipe-list {
   padding: 1rem;
   padding-left: 2rem;
-  /* width: 50%; */
+  padding-top: 0;
   border-right: 2px dashed black;
   max-height: 100vh;
   overflow: auto;
+  padding-bottom: 2rem;
 }

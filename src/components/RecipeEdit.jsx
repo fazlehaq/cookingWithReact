@@ -31,25 +31,21 @@ function RecipeEdit({ recipe }) {
     handleChange({ ingredients: newIngredients });
   }
 
-  // here is the bug
   function handleIngredientChange(id, ingredient) {
-    // getting all ingredients of a recipe
     const newIngredients = [...recipe.ingredients];
-    // finding the index of a ingredient that has beeen updates
     const index = newIngredients.findIndex(
       (newIngredient) => newIngredient.id == id
     );
-    // console.log(newIngredients, newIngredients[index]);
     newIngredients[index] = ingredient;
     handleChange({ ingredients: newIngredients });
   }
 
   return (
     <div id="recipe-edit">
-      <div className="recipe-edit-close-btn-container">
+      <div className="recipe-edit-close-btn-container ">
         <button
           onClick={handleCloseEditRecipe}
-          className="recipe-edit-close-btn"
+          className="recipe-edit-close-btn "
         >
           &times;
         </button>
@@ -100,7 +96,7 @@ function RecipeEdit({ recipe }) {
               <IngredientEdit
                 handleIngredientChange={handleIngredientChange}
                 handleIngredientDelete={handleIngredientDelete}
-                key={v4()}
+                key={ingredient.id}
                 ingredient={ingredient}
               />
             );
@@ -110,8 +106,7 @@ function RecipeEdit({ recipe }) {
         <div className="add-ingredient-btn-container ">
           <button
             onClick={() => handleAddIngredient()}
-            className="button button-primary
-          "
+            className="button add-ingredient-btn"
           >
             Add Ingradient
           </button>

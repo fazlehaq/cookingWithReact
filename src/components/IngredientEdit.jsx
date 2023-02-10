@@ -18,7 +18,7 @@ function IngredientEdit(props) {
       />
       <input
         type="text"
-        value={ingredient.quantity ?? "New Amount"}
+        value={ingredient.quantity}
         placeholder="Amount Of Ingredient"
         onInput={(e) => {
           handleChange({ quantity: e.target.value });
@@ -26,8 +26,7 @@ function IngredientEdit(props) {
         }}
       />
       <button
-        className="button dan
-      ger-btn"
+        className="button danger-btn"
         onClick={() => handleIngredientDelete(ingredient.id)}
       >
         &times;

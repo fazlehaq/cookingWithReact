@@ -1,7 +1,5 @@
 import React from "react";
 import Ingredients from "./Ingredients";
-import { v4 } from "uuid";
-import Instructions from "./Instructions";
 import "../css/recipe.css";
 import { useContext } from "react";
 import { RecipeContext } from "../App";
@@ -42,7 +40,6 @@ function Recipe(props) {
         <div className="">
           <div className="label">Instructions</div>
           <div className="instructions">{instructions}</div>
-          {/* <Instructions instructions={instructions} /> */}
         </div>
         <br />
         <div className="">

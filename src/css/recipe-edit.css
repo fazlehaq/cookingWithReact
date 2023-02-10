@@ -1,10 +1,10 @@
 #recipe-edit {
-  padding: 1rem;
+  padding: 2rem;
   padding-top: 0;
-  padding-left: 2rem;
   height: auto;
   max-height: 100vh;
-  overflow-x: auto;
+  overflow: auto;
+  /* margin-bottom: 2rem; */
 }
 
 .recipe-edit-close-btn-container {
@@ -20,6 +20,11 @@
   outline: none;
   border: none;
   cursor: pointer;
+  color: #c42847;
+}
+
+.recipe-edit-close-btn:hover {
+  color: #d73959;
 }
 
 .recipe-edit-details {
@@ -77,6 +82,15 @@
   text-align: center;
 }
 
+.add-ingredient-btn {
+  background-color: #169873;
+  padding: 7px 10px;
+}
+
+.add-ingredient-btn:hover {
+  background-color: #34b490;
+}
+
 @media only screen and (max-width: 1000px) {
   .recipe-edit-details {
     display: grid;
@@ -85,10 +99,5 @@
 
   .recipe-edit-ingredients-grid {
     grid-template-columns: auto;
-  }
-
-  .labels {
-    /* display: none; */
-    /* visibility: hidden; */
   }
 }
